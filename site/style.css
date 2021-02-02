@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+font-family: "Wildstripe";
+src: url("/wildstripe/Wildstripe.otf") format(otf)
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+body{
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color:rgb(255, 51, 102);
+}
+
+a{
+    font-family: "Wildstripe";
+}
+
+header{
+    width: 100%;
+}
+
+.grand{
+    width: 100%;
+}
+
+.petit{
+    visibility: hidden;
+    width: 0%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0em 1em;
+    font-size: 150%;
+}
+
+nav a:hover{
+color: rgb(255, 51, 102);
+}
+
+footer a:hover{
+color:rgb(255, 51, 102);
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 100px 0 80px 0 auto;
+}
+
+main a{
+    position: relative;
+}
+
+.survol:hover h2.un{
+    display: block;
+    z-index: 2;
+    opacity: 0.85;
+}
+
+.survol h2{
+    display: none;
+    position: absolute;
+    top: -40px;
+    right: 100px;
+    transform: translate(100px, 50px);
+    text-align: center;
+    width: 195px;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+    background-color:rgb(255, 51, 102);
+    border-radius: 50%;
+}
+
+main img{
+    position: relative;
+    width: 195px;
+    margin: 30px 0px;
+}
+
+footer{
+    text-align: center;
+    font-size: 150%;
+    margin-top: 1em;
+}
+
+@media screen and (max-width:960px){
+ 
+    body{
+        margin: 0%;
+    }
+
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    body{
+        margin: 0%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+    }
+
+    .petit{
+        visibility: visible;
+        width: 100%;
+        vertical-align: top;
+    }
+    .grand{
+        width: 0%;
+        visibility: hidden;
+    }
+}
