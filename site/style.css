@@ -51,10 +51,12 @@ nav{
 
 nav a:hover{
 color: rgb(255, 51, 102);
+cursor: pointer;
 }
 
 footer a:hover{
 color:rgb(255, 51, 102);
+cursor: pointer;
 }
 
 main{
@@ -64,21 +66,32 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 90%;
-    margin: 100px 0 80px 0 auto;
+    margin: 100px 0 80px 0;
 }
 
 main a{
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0.3em;
+    overflow: hidden;
+}
+
+.survol{
     position: relative;
 }
 
-.survol:hover h2.un{
-    display: block;
-    z-index: 2;
-    opacity: 0.85;
+.survol:hover .image{
+    transform: scale(1.2);
 }
 
-.survol h2{
-    display: none;
+.survol:hover .overlay{
+    z-index: 3;
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.survol .texte{
     position: absolute;
     top: -40px;
     right: 100px;
@@ -88,15 +101,27 @@ main a{
     height: 200px;
     padding-top: 40px;
     color: white;
-    background-color:rgb(255, 51, 102);
-    border-radius: 50%;
 }
 
-main img{
-    position: relative;
-    width: 195px;
-    margin: 30px 0px;
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(255, 51, 102);
 }
+
+.image{
+    display: block;
+    width: 200px;
+    height: auto;
+    transition: transform .3s;
+  }
 
 footer{
     text-align: center;
@@ -137,5 +162,9 @@ footer{
     .grand{
         width: 0%;
         visibility: hidden;
+    }
+
+    main a{
+        margin: 1em;
     }
 }
