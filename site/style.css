@@ -87,8 +87,13 @@ main a{
 
 .survol:hover .overlay{
     z-index: 3;
-    opacity: 0.85;
+    background-color:rgba(255, 51, 102, 0.767);
     cursor: pointer;
+}
+
+.survol:hover .texte{
+    opacity: 1;
+    z-index: 5;
 }
 
 .survol .texte{
@@ -101,6 +106,7 @@ main a{
     height: 200px;
     padding-top: 40px;
     color: white;
+    opacity: 0;
 }
 
 .overlay{
@@ -111,9 +117,8 @@ main a{
     right: 0;
     width: 200px;
     border-radius: 50%;
-    opacity: 0;
     transition: .5s ease;
-    background-color:rgb(255, 51, 102);
+    background-color:rgba(255, 51, 102, 0);
 }
 
 .image{
