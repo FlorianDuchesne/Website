@@ -16,14 +16,15 @@ main{
     align-items: center;
 }
 
-h1, p{
+h1{
     font-family: 'wildstripe';
 }
 
 p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 23px;
-    width: 60%;
+    font-size:larger;
+    width: 55%;
 }
 
 @media screen and (max-width:480px){
