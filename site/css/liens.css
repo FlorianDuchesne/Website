@@ -1,0 +1,51 @@
+nav{
+    margin-bottom: 10vh;
+}
+
+figure{
+    position: relative;
+    margin:auto;
+    padding: 0;
+    width: 20%;
+}
+
+img{
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+
+figure a{
+    position: absolute;
+    border-radius: 0;
+    width: auto;
+    font-size: xx-large;
+}
+
+figure a:hover{
+color: rgb(255, 51, 102);
+}
+
+#fb{
+    top: -60px;
+    right: 35px;
+}
+
+#insta{
+    bottom: -80px;
+    right: 20px;
+}
+
+#tumblr{
+    left: -170px;
+    top: 90px;
+}
+
+#yt{
+    right: -170px;
+    top: 90px;
+}
+
+footer{
+    margin-top: 15vh;
+}

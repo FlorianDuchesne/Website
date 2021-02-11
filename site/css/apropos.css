@@ -1,0 +1,38 @@
+
+figure{
+    margin:0;
+    padding: 0;
+    width: 30%;
+}
+
+img{
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, p{
+    font-family: 'wildstripe';
+}
+
+p{
+    text-align: center;
+    font-size: 23px;
+    width: 60%;
+}
+
+@media screen and (max-width:480px){
+
+    figure{
+        width: 50%;
+    }
+
+    p{
+        width: 90%;
+    }
+}

@@ -1,0 +1,96 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+		font-family: 'wildstripe';
+		color: #FBFBFB;
+		margin: 0;
+}
+
+.contact__container {
+		display: block;
+		border: 10px solid rgb(255, 51, 102);
+		border-radius: 10px;
+		margin: 0 auto;
+		padding: 0 0 10px 10px;
+		max-width: 330px;
+		background-color:rgb(255, 51, 102);
+}
+
+.contact__title {
+		display: inline-block;
+}
+
+.contact__title h2 {
+		padding: 0 10px 0 0px;
+		margin: 5px 0;
+		color: #FBFBFB;
+}
+
+.contact__form {
+		padding: 10px 10px 0 0;
+}
+
+hr {
+		width: 100%;
+		display: block;
+		margin: 5px 0;
+		height: 5px;
+		border: 0;
+		background-color: #FBFBFB;
+}
+
+input,
+textarea {
+		width: 100%;
+		border: 5px solid #FFFFFF;
+		border-radius: 5px;
+		resize: none;
+		padding: 0 5px;
+		box-sizing: border-box;
+		font-family: 'Open Sans' sans-serif;
+		font-size: 18px;
+		color: #000000;
+}
+
+input[type="text"] {
+		padding: 0;
+		height: 40px;
+		width: 100%;
+}
+
+input:focus,
+textarea:focus {
+		outline: none;
+}
+
+.contact__form-input {
+		margin: 5px 0 10px 0;
+}
+
+.contact__form-textarea {
+		margin: 5px 0;
+		width: 100%;
+		height: 100px;
+}
+
+input[type="submit"] {
+		width: 100%;
+		height: 50px;
+		background-color: #93ff9c;
+		border: 0;
+		color: #000000;
+		border: 5px solid #93ff9c;
+		border-radius: 5px;
+		margin: 10px 0 0 0;
+		font-family: 'wildstripe';
+		font-size: 22px;
+}
+
+input[type="button"]:hover {
+		background-color: #368da2;
+		border: #368da2;
+}

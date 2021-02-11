@@ -25,6 +25,8 @@ body{
 
 a{
     font-family: "Wildstripe";
+    text-decoration: none;
+    color: black;
 }
 
 header{

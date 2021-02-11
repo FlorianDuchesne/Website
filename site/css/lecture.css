@@ -1,0 +1,28 @@
+h1{
+    font-family: 'wildstripe';
+}
+
+figure{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+figcaption{
+    display: flex;
+    justify-content: space-between;
+}
+
+figcaption a{
+    width: auto;
+    border-radius:0%;
+    font-size:larger;
+}
+
+figcaption a:hover{
+color:    rgb(255, 51, 102);
+}
