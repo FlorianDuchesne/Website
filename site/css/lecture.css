@@ -1,28 +1,36 @@
-h1{
-    font-family: 'wildstripe';
+main {
+  margin: 50px 0 50px 0;
 }
 
-figure{
-    width: 100%;
-    margin:0;
-    padding: 0;
+h1 {
+  font-family: "wildstripe";
 }
 
-img{
-    width: 100%;
+figure {
+  width: 90%;
+  margin: 0;
+  padding: 0;
 }
 
-figcaption{
-    display: flex;
-    justify-content: space-between;
+img {
+  width: 100%;
 }
 
-figcaption a{
-    width: auto;
-    border-radius:0%;
-    font-size:larger;
+figcaption {
+  display: flex;
+  justify-content: space-between;
 }
 
-figcaption a:hover{
-color:    rgb(255, 51, 102);
+figcaption a {
+  width: auto;
+  border-radius: 0%;
+  font-size: larger;
+}
+
+figcaption a:hover {
+  color: rgb(255, 51, 102);
+}
+
+.hidden {
+  display: none;
 }

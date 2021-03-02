@@ -1,51 +1,55 @@
-nav{
-    margin-bottom: 10vh;
+nav {
+  margin-bottom: 10vh;
 }
 
-figure{
-    position: relative;
-    margin:auto;
-    padding: 0;
-    width: 20%;
+main {
+  margin: 100px 0 150px 0;
 }
 
-img{
-    margin:0;
-    padding: 0;
-    width:100%;
+figure {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 20%;
 }
 
-figure a{
-    position: absolute;
-    border-radius: 0;
-    width: auto;
-    font-size: xx-large;
+img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-figure a:hover{
-color: rgb(255, 51, 102);
+figure a {
+  position: absolute;
+  border-radius: 0;
+  width: auto;
+  font-size: xx-large;
 }
 
-#fb{
-    top: -60px;
-    right: 35px;
+figure a:hover {
+  color: rgb(255, 51, 102);
 }
 
-#insta{
-    bottom: -80px;
-    right: 20px;
+#fb {
+  top: -60px;
+  right: 35px;
 }
 
-#tumblr{
-    left: -170px;
-    top: 90px;
+#insta {
+  bottom: -80px;
+  right: 20px;
 }
 
-#yt{
-    right: -170px;
-    top: 90px;
+#tumblr {
+  left: -170px;
+  top: 90px;
 }
 
-footer{
-    margin-top: 15vh;
+#yt {
+  right: -170px;
+  top: 90px;
+}
+
+footer {
+  margin-top: 15vh;
 }
