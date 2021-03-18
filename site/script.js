@@ -9,17 +9,45 @@ console.log("current slide = ", currentSlide);
 console.log("previous slide = ", previousSlide);
 console.log("next slide = ", nextSlide);
 
-document
-  .getElementById("clicGauche")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    if (currentSlide === planches[0]) {
-      previousChronic();
-      console.log("condition planche 0");
-      console.log(currentSlide);
-      console.log(planches[0]);
-    }
-  });
+// navigation par les touches de clavier
+
+window.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "ArrowLeft":
+      console.log("arrowleft");
+      if (currentSlide === planches[0]) {
+        previousChronic();
+      } else {
+        clicGauche();
+      }
+      break;
+    case "ArrowRight":
+      console.log("arrowright");
+      clicDroit();
+      if (nextSlide === document.querySelector("figcaption")) {
+        window.addEventListener("keydown", (e) => {
+          switch (e.key) {
+            case "ArrowRight":
+              nextChronic();
+              break;
+          }
+        });
+      }
+  }
+});
+
+// document
+//   .getElementById("clicGauche")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     if (currentSlide === planches[0]) {
+//       previousChronic();
+//       console.log("condition planche 0");
+//       console.log(currentSlide);
+//       console.log(planches[0]);
+//     }
+//   });
+// ---> à enlever je crois ?
 
 document
   .getElementById("clicDroit")
