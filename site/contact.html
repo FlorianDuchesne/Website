@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Contact Form</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_GCessG2txDYW5qFMoJivx");
+      })();
+    </script>
   </head>
   <body>
     <div class="container">
@@ -36,14 +45,28 @@
                 <hr />
               </h2>
             </div>
-            <form class="contact__form">
+            <form id="form" class="contact__form">
               <p>Nom</p>
-              <input class="contact__form-input" type="text" />
+              <input
+                class="contact__form-input"
+                type="text"
+                name="from_name"
+                id="from_name"
+              />
               <p>Email</p>
-              <input class="contact__form-input" type="text" />
+              <input
+                class="contact__form-input"
+                type="email"
+                name="user_email"
+              />
               <p>Message</p>
-              <textarea class="contact__form-textarea" type="text"></textarea>
-              <input type="submit" value="Envoyer" />
+              <textarea
+                class="contact__form-textarea"
+                type="text"
+                name="message"
+                id="message"
+              ></textarea>
+              <input type="submit" id="button" value="Envoyer" />
             </form>
           </div>
         </div>
