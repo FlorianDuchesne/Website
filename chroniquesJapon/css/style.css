@@ -131,10 +131,11 @@ main a {
 }
 
 footer {
-  display: none;
+  /* display: none; */
+  font-family: "Wildstripe";
   text-align: center;
-  font-size: 150%;
-  margin-top: 1em;
+  /* font-size: 150%; */
+  margin: 1em;
 }
 
 @media screen and (max-width: 960px) {
