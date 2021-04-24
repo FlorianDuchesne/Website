@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Wildstripe";
-  src: local("/wildstripe/Wildstripe.otf") format(otf);
+  src: url("../wildstripe/Wildstripe.otf") format(otf);
 }
 
 .container {
