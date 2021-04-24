@@ -6,7 +6,7 @@
   font-family: "Wildstripe Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Wildstripe Regular"), url("Wildstripe.woff") format("woff");
+  src: local("Wildstripe Regular"), url("./Wildstripe.woff") format("woff");
 }
 
 /* * {
