@@ -1,39 +1,37 @@
-
-figure{
-    margin:0;
-    padding: 0;
-    width: 30%;
+figure {
+  margin: 0;
+  padding: 0;
+  width: 30%;
 }
 
-img{
-    margin:0;
-    padding: 0;
-    width:100%;
+img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-main{
-    flex-direction: column;
-    align-items: center;
+main {
+  flex-direction: column;
+  align-items: center;
 }
 
-h1{
-    font-family: 'wildstripe';
+h1 {
+  font-family: "Wildstripe Regular";
 }
 
-p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    font-size:larger;
-    width: 55%;
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: larger;
+  width: 55%;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
+  figure {
+    width: 50%;
+  }
 
-    figure{
-        width: 50%;
-    }
-
-    p{
-        width: 90%;
-    }
+  p {
+    width: 90%;
+  }
 }
