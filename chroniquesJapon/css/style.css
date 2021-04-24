@@ -31,7 +31,7 @@ body {
 }
 
 a {
-  font-family: "Wildstripe";
+  font-family: "Wildstripe Regular";
   text-decoration: none;
   color: black;
 }
@@ -139,7 +139,7 @@ main a {
 
 footer {
   /* display: none; */
-  font-family: "Wildstripe";
+  font-family: "Wildstripe Regular";
   text-align: center;
   /* font-size: 150%; */
   margin: 1em;
