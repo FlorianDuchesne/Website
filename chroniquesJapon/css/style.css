@@ -5,6 +5,7 @@
 @font-face {
   font-family: "Wildstripe";
   src: url("../wildstripe/Wildstripe.otf") format(otf);
+  src: local("../wildstripe/Wildstripe.otf") format (otf);
 }
 
 .container {
