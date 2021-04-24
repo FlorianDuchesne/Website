@@ -36,19 +36,6 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-// document
-//   .getElementById("clicGauche")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
-//     if (currentSlide === planches[0]) {
-//       previousChronic();
-//       console.log("condition planche 0");
-//       console.log(currentSlide);
-//       console.log(planches[0]);
-//     }
-//   });
-// ---> à enlever je crois ?
-
 document
   .getElementById("clicDroit")
   .addEventListener("click", function (event) {

@@ -24,7 +24,7 @@ figcaption {
 figcaption a {
   width: auto;
   border-radius: 0%;
-  font-size: larger;
+  font-size: x-large;
 }
 
 figcaption a:hover {
