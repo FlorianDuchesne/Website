@@ -18,7 +18,7 @@ main {
 
 main figure {
   width: 80%;
-  top: 10px;
+  top: 1em;
   position: absolute;
   transition: ease-in-out 0.3s;
   margin: auto;
