@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lecture.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="lecture.html"
+        ><img src="banniereLecture.png" alt="bannière super fantôme"
+      /></a>
+    </header>
+    <main>
+      <div id="modeTriche">
+        <a href="#">Activer mode Triche</a>
+      </div>
+      <div id="divInventaire">
+        <h3>Inventaire</h3>
+        <ul></ul>
+        <small id="inventaire"></small>
+      </div>
+      <figure id="planche1">
+        <img src="./planche_1.png" alt="Super Fantôme décroche le téléphone" />
+        <figcaption>
+          <p>
+            Tu es Super Fantôme. Alors que tu es tranquille chez toi, le
+            téléphone sonne. On te dit que la fille du président a été kidnappée
+            et qu'il faut aller la secourir au plus vite.
+          </p>
+          <a href="#planche2" class="clic"
+            >Si tu fonces en montant dans ton Avion Fantôme, clique ici !</a
+          >
+          <a href="#planche2epinards" class="clic"
+            >Si malgré l'urgence, tu manges d'abord une tartine d'épinards pour
+            prendre des forces avant, clique ici !</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche2" class="hidden">
+        <img src="./planche_2.png" alt="Super Fantôme est face au Vautour" />
+        <figcaption>
+          <p>
+            Tu es dans l'avion, mais tu as très faim ! Alors que tu t'apprêtes à
+            mettre le pilote automatique le temps de te faire une tartine, l'un
+            de tes redoutables adversaires, le Vautour, se met sur ton chemin !
+          </p>
+          <a href="#planche5" class="clic"
+            >Si tu prends ton mal en patience, envoie-lui un missile à la figure
+            en cliquant ici !</a
+          >
+          <a href="#planche3" class="clic"
+            >Si tu penses que le Vautour n'arrivera pas à empêcher l'avion de
+            passer, va te faire cette tartine tout de suite en cliquant ici !</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche2epinards" class="hidden">
+        <img src="./planche_2.png" alt="Super Fantôme est face au Vautour" />
+        <figcaption>
+          <p>
+            Tu te sens beaucoup mieux maintenant que tu as mangé cette tartine.
+            Tu prends ton avion supersonique, mais dans le ciel, l'un de tes
+            redoutables adversaires, le Vautour, t'arrête.
+          </p>
+          <a href="#planche4" class="clic"
+            >Si tu pilotes l'avion de manière à l'esquiver pour ne pas perdre de
+            temps, clique ici !</a
+          >
+          <a href="#planche6" class="clic"
+            >Si tu lui balances du spray anti-requins pour te débarrasser de
+            lui, clique ici !</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche3" class="hidden">
+        <img src="./planche_3.png" alt="Super Fantôme est face au Vautour" />
+        <figcaption>
+          <p>
+            Tu manges ta tartine en regardant à travers le hublot : le Vautour
+            est soufflé par l'avion, tu le vois s'éloigner au loin.
+          </p>
+          <a href="#planche8" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche4" class="hidden">
+        <img
+          src="./planche_4.png"
+          alt="L'avion de Super Fantôme poursuit sa route"
+        />
+        <figcaption>
+          <p>
+            Tu vois le Vautour s'éloigne au loin, tout en poursuivant ta route.
+          </p>
+          <a href="#planche8" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche5" class="hidden">
+        <img src="./planche_5.png" alt="Super Fantôme est patraque" />
+        <figcaption>
+          <p>
+            Le Vautour éclate en morceaux, mais tu n'as pas mangé depuis des
+            heures ! Tu es blanc comme un linge et tu as la tête qui tourne : tu
+            te vois dans l'obligation d'aller t'allonger une minute.
+          </p>
+          <a href="#planche7" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche6" class="hidden">
+        <img src="./planche_6.png" alt="Le Vautour tombe à l'eau" />
+        <figcaption>
+          <p>
+            Le Vautour crie, aveuglé, et tombe dans la mer, tandis que tu
+            continues ton chemin.
+          </p>
+          <a href="#planche8" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche7" class="hidden">
+        <img src="./planche_7.png" alt="Super Fantôme se réveille" />
+        <figcaption>
+          <p>
+            Après t'être bien reposé, tu apprends à la télévision que ton ennemi
+            juré a eu le temps de conquérir le monde : tu as dormi bien trop
+            longtemps !
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro !</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche8" class="hidden">
+        <img
+          src="./planche_8.png"
+          alt="Super Fantôme est sur la scène d'investigation"
+        />
+        <figcaption>
+          <p>
+            Tu arrives sain et sauf sur le lieu où la jeune fille a été
+            kidnappée. Des traces de peinture indiquent le chemin qu'aurait
+            suivi ton adversaire.
+          </p>
+          <a href="#planche9" class="clic"
+            >Si tu suis les traces de pas, clique ici.</a
+          >
+          <a href="#planche10" class="clic"
+            >Si tu cherches d'autres indices, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche9" class="hidden">
+        <img
+          src="./planche_9.png"
+          alt="Super Fantôme est tombé dans un piège"
+        />
+        <figcaption>
+          <p>Tu es tombé dans un piège ! Tu as perdu.</p>
+          <a href="#planche1" class="clic">Recommence à zéro !</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche10" class="hidden">
+        <img
+          src="./planche_10.png"
+          alt="Super Fantôme utilise ses super lunettes"
+        />
+        <figcaption>
+          <p>
+            Tu utilises tes lunettes infra-rouges, qui te permettent de te
+            rendre compte que les traces de peinture sont une mise en scène !
+            Heureusement, les véritables empreintes ADN te guident vers la base
+            de ton adversaire.
+          </p>
+          <a href="#planche11" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche11" class="hidden">
+        <img src="./planche_11.png" alt="Super Fantôme hésite" />
+        <figcaption>
+          <p>Tu te trouves en face de deux portes.</p>
+          <a href="#planche12" class="clic"
+            >Si tu prends la porte de gauche, clique ici.</a
+          >
+          <a href="#planche13" class="clic"
+            >Si tu prends la porte de droite, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche12" class="hidden">
+        <img
+          src="./planche_12.png"
+          alt="Super Fantôme est dans une pièce sombre"
+        />
+        <figcaption>
+          <p>
+            Tu te trouves dans une pièce vide, avec un paquet de chewing-gum qui
+            traîne. Tu le prends au cas où et tu rebrousses chemin en prenant
+            l'autre porte.
+          </p>
+          <a href="#planche13" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche13" class="hidden">
+        <img src="./planche_13.png" alt="Super Fantôme est dans un couloir" />
+        <figcaption>
+          <p>
+            Tu es dans un long couloir vide. Derrière toi, il y a une porte
+            fermée.
+          </p>
+          <a href="#planche15" class="clic"
+            >Si tu vérifies avec tes lunettes infrarouges qu'il n'y a rien de
+            louche devant toi, clique ici.</a
+          >
+          <a href="#planche14" class="clic"
+            >Si tu jettes un oeil derrière la porte, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche14" class="hidden">
+        <img src="./planche_14.png" alt="Super Fantôme tombe dans un piège" />
+        <figcaption>
+          <p>Tu tombes dans un piège ! Tu as perdu.</p>
+          <a href="#planche1" class="clic">Recommence à zéro !</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche15" class="hidden">
+        <img src="./planche_15.png" alt="Super Fantôme met ses lunettes" />
+        <figcaption>
+          <p>Il y a des rayons détecteurs de mouvements !</p>
+          <a href="#planche20" class="clic"
+            >Si tu essaies d'avancer à la manière d'un chat agile, clique
+            ici.</a
+          >
+          <a href="#planche21" class="clic"
+            >Si tu utilises tes Super Ventouses pour ramper contre le plafond,
+            clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche21" class="hidden">
+        <img src="./planche_21.png" alt="Super Fantôme tombe" />
+        <figcaption>
+          <p>
+            Zut, tu as oublié de vérifier l'état de tes ventouses, ce matin ! Tu
+            tombes par terre en te cassant la figure.
+          </p>
+          <a href="#planche16" class="clic">Clique ici.</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche16" class="hidden">
+        <img src="./planche_16.png" alt="Super Fantôme tombe dans un piège" />
+        <figcaption>
+          <p>
+            Les rayons détecteurs de mouvements déclenchent une alarme et te
+            font tomber dans un piège ! Tu as perdu.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro.</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche20" class="hidden">
+        <img src="./planche_20.png" alt="Super Fantôme fait une pause" />
+        <figcaption>
+          <p>
+            Tu parviens à traverser le couloir sans déclencher l'alarme, mais tu
+            es épuisé ! Tu bois une gorgée de Super Soda avant de monter un
+            escalier.
+          </p>
+          <a href="#planche17" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche17" class="hidden">
+        <img src="./planche_17.png" alt="Super Fantôme est sur un rooftop" />
+        <figcaption>
+          <p>
+            Tu te trouves sur le toit d'un immeuble. Au loin, une silhouette
+            familière parcourt le ciel…
+          </p>
+          <a href="#planche26" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche18" class="hidden">
+        <img src="./planche_18.png" alt="Super Fantôme entend un bruit" />
+        <figcaption>
+          <p>
+            En fait, il s'agit d'un oiseau. Soudain, tu entends les cris d'une
+            femme en détresse !
+          </p>
+          <a href="#planche19" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche19" class="hidden">
+        <img src="./planche_19.png" alt="Quelqu'un crie !" />
+        <figcaption>
+          <p>La voix provient d'en dessous.</p>
+          <a href="#planche23" class="clic"
+            >Si tu la suis en traversant un espèce de hublot à travers le toit,
+            clique ici.</a
+          >
+          <a href="#planche22" class="clic"
+            >Si tu as peur qu'il s'agisse d'un piège, envoie donc ta
+            mini-voiture télécommandée à ta place, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche22" class="hidden">
+        <img
+          src="./planche_22.png"
+          alt="Super Fantôme regarde ce qui se passe en bas avec sa manette."
+        />
+        <figcaption>
+          <p>
+            La caméra de la mini-voiture te montre la fille du président
+            attachée, menacée par le Rayon de la Mort du docteur Krapougnat. Tu
+            descends pour la sauver avant qu'il ne soit trop tard !
+          </p>
+          <a href="#planche24" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche24" class="hidden">
+        <img
+          src="./planche_24.png"
+          alt="Super Fantôme contemple la catastrophe."
+        />
+        <figcaption>
+          <p>
+            La mini-voiture a trahi ta présence ! Le temps que tu descendes, le
+            docteur Krapougnat a déjà déclenché le Rayon de la Mort sur la jeune
+            fille ! Tu as perdu !
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche26" class="hidden">
+        <img src="./planche_26.png" alt="C'est le Vautour !" />
+        <figcaption>
+          <p>
+            Il s'agit du vautour ! Il atterrit sur le toit et veut te combatte,
+            tandis que tu entends les cris d'une jeune femme en détresse !
+          </p>
+          <a href="#planche27" class="clic"
+            >Si tu fuis le combat pour aller au secours de la jeune femme,
+            clique ici.</a
+          >
+          <a href="#planche28" class="clic"
+            >Si tu veux d'abord te débarrasser une bonne fois pour toutes du
+            Vautour, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche28" class="hidden">
+        <img src="./planche_28.png" alt="Il y a une grosse explosion !" />
+        <figcaption>
+          <p>
+            Le Vautour appuie sur un bouton qui déclenche une bombe ! Tu es mort
+            !
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche27" class="hidden">
+        <img src="./planche_27.png" alt="Super Fantôme prend la fuite." />
+        <figcaption>
+          <p>
+            Le Vautour a déclenché une bombe dévastatrice, mais tu es déjà loin.
+            Tu passes par une sorte de hublot et échoue dans un laboratoire.
+          </p>
+          <a href="#planche23" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche23" class="hidden">
+        <img
+          src="./planche_23.png"
+          alt="Super Fantôme découvre la jeune fille"
+        />
+        <figcaption>
+          <p>
+            Au milieu de la pièce, tu aperçois la jeune fille attachée sur une
+            table. Au-dessus d'elle, le Rayon de la Mort du docteur Krapougnat !
+          </p>
+          <a href="#planche29" class="clic">Si tu fonces, clique ici.</a>
+          <a href="#planche25" class="clic"
+            >Si tu réfléchis d'abord à un plan d'attaque, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche25" class="hidden">
+        <img src="./planche_25.png" alt="Super Fantôme contemple le désastre" />
+        <figcaption>
+          <p>
+            Zut ! Une caméra de surveillance t'a repéré ! Le Rayon de la Mort a
+            été déclenché sur la fille du président ! Tu as perdu.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche29" class="hidden">
+        <img
+          src="./planche_29.png"
+          alt="Super Fantôme délivre la jeune fille"
+        />
+        <figcaption>
+          <p>
+            Avec ta super force, tu arrives à dévier la direction du canon du
+            Rayon de la Mort ! Maintenant qu'elle est hors de danger, tu dénoues
+            les liens de la jeune fille. Mais une voix crie : "Pas si vite !
+            Haut les mains !"
+          </p>
+          <a href="#planche30" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche30" class="hidden">
+        <img
+          src="./planche_30.png"
+          alt="le docteur Krapougnat menace Super Fantôme avec un pistolet"
+        />
+        <figcaption>
+          <p>C'est le docteur Krapougnat, il est armé !</p>
+          <a href="#planche32" class="clic"
+            >Si tu lèves les bras en signe de soumission, clique ici.</a
+          >
+          <a href="#planche31" class="clic"
+            >Si tu essaies de détourner son attention en lui signalant qu'il y a
+            un dinosaure derrière lui, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche31" class="hidden">
+        <img src="./planche_31.png" alt="Super Fantôme est mort !" />
+        <figcaption>
+          <p>
+            Il n'apprécie pas que tu le prennes pour un idiot et te tire dessus.
+            Tu as perdu.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche32" class="hidden">
+        <img
+          src="./planche_32.png"
+          alt="Super Fantôme avance, menacé par le pistolet du docteur"
+        />
+        <figcaption>
+          <p>
+            Le docteur sourit. Il t'amène vers la salle des requins tout en
+            t'expliquant que cette fois-ci il va vraiment réussir à conquérir le
+            monde.
+          </p>
+          <a href="#planche33" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche33" class="hidden">
+        <img
+          src="./planche_33.png"
+          alt="Super Fantôme est dans l'eau, entouré de requins !"
+        />
+        <figcaption>
+          <p>
+            Tu es jeté avec la jeune fille dans une espèce de piscine avec des
+            requins. Heureusement, tu as du spray anti-requins !
+          </p>
+          <a href="#planche35" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche34" class="hidden">
+        <img
+          src="./planche_34.png"
+          alt="Super Fantôme a été mangé par un requin !"
+        />
+        <figcaption>
+          <p>
+            Zut, lorsque tu as lancé du spray anti-requins sur le Vautour un peu
+            plus tôt, tu as vidé ton flacon ! Tu meurs déchiqueté.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche35" class="hidden">
+        <img
+          src="./planche_35.png"
+          alt="Super Fantôme se défend grâce à son spray !"
+        />
+        <figcaption>
+          <p>Tu utilises ton spray anti-requins : les bêtes sont K.O !</p>
+          <a href="#planche36" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche36" class="hidden">
+        <img
+          src="./planche_36.png"
+          alt="Super Fantôme regarde le fond de la piscine."
+        />
+        <figcaption>
+          <p>
+            Il y a une trappe au fond de la piscine, mais tu commences à être
+            très fatigué.
+          </p>
+          <a href="#planche37" class="clic"
+            >Si tu retiens ta respiration et essaie de l'atteindre, clique
+            ici.</a
+          >
+          <a href="#planche40" class="clic"
+            >Si tu proposes à la jeune fille de le faire à ta place, clique
+            ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche37" class="hidden">
+        <img
+          src="./planche_37.png"
+          alt="Super Fantôme essaie d'ouvrir la trappe."
+        />
+        <figcaption>
+          <p>Tu essaies d'ouvrir la trappe, mais c'est super dur !</p>
+          <a href="#planche38" class="clic">Si tu continues, clique ici.</a>
+          <a href="#planche39" class="clic"
+            >Si tu remontes à la surface, clique ici.</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche38" class="hidden">
+        <img src="./planche_38.png" alt="Super Fantôme s'est noyé." />
+        <figcaption>
+          <p>
+            Mince ! A bout de force et d'oxygène, tu t'es évanoui dans l'eau et
+            tu es mort… Tu as perdu.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche39" class="hidden">
+        <img
+          src="./planche_39.png"
+          alt="Super Fantôme s'adresse à la jeune fille."
+        />
+        <figcaption>
+          <p>
+            Tu expliques la situation à la jeune fille qui insiste pour essayer.
+          </p>
+          <a href="#planche40" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche40" class="hidden">
+        <img
+          src="./planche_40.png"
+          alt="La jeune fille remonte à la surface, victorieuse."
+        />
+        <figcaption>
+          <p>
+            Elle remonte à la surface après beaucoup de temps. Elle t'explique
+            qu'elle est super forte en apnée et qu'elle a fini par réussir à
+            ouvrir la trappe. La piscine commence à se vider.
+          </p>
+          <a href="#planche41" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche41" class="hidden">
+        <img
+          src="./planche_41.png"
+          alt="Une trappe s'est ouverte, Super Fantôme et la jeune fille échouent ailleurs."
+        />
+        <figcaption>
+          <p>
+            Vous tombez dans une petite pièce dépourvue d'échappatoire. Un gaz
+            se disperse à travers un petit trou. Le docteur crie : "Ah ah ah !
+            Vous avez peut-être réussi à échapper aux requins, "mais vous
+            n'échapperez pas à mon gaz mortel !"
+          </p>
+          <a href="#planche43" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche43" class="hidden">
+        <img
+          src="./planche_43.png"
+          alt="Super Fantôle bouche l'orifice avec un chewing-gum."
+        />
+        <figcaption>
+          <p>
+            Après une phase de désespoir, tu te rappelles que tu as des
+            chewing-gums sur toi. Tu en mâchouilles un et tu le colles contre le
+            trou qui envoie du gaz.
+          </p>
+          <a href="#planche44" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche42" class="hidden">
+        <img
+          src="./planche_42.png"
+          alt="Super Fantôme et la jeune fille meurent intoxiqués"
+        />
+        <figcaption>
+          <p>
+            Vous toussez et finissez par mourir dans la douleur. Tu as perdu.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche44" class="hidden">
+        <img
+          src="./planche_44.png"
+          alt="Super Fantôme décoche un uppercut sur le docteur."
+        />
+        <figcaption>
+          <p>
+            Le docteur s'aperçoit que vous n'êtes pas en train de mourir et
+            vient voir ce qu'il se passe : tu en profites pour lui décocher un
+            bon coup de poing !
+          </p>
+          <a href="#planche46" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche46" class="hidden">
+        <img src="./planche_46.png" alt="Super Fantôme combat le Vautour." />
+        <figcaption>
+          <p>
+            Quand vous arrivez sur le toit du laboratoire, le Vautour arrive sur
+            toi et essaie de t'assomer. Tu l'esquives avec ton agilité de félin
+            et lui décoches un magnifique uppercut !
+          </p>
+          <a href="#planche48" class="clic"
+            >Si tu l'abandonnes là après l'avoir ligoté, clique ici</a
+          >
+          <a href="#planche45" class="clic"
+            >Si tu l'emmènes avec toi après lui avoir passé des menottes, clique
+            ici</a
+          >
+        </figcaption>
+      </figure>
+
+      <figure id="planche45" class="hidden">
+        <img
+          src="./planche_45.png"
+          alt="Le Vautour attaque Super Fantôme par surprise."
+        />
+        <figcaption>
+          <p>
+            Alors que vous approchez du commissariat, le Vautour t'assomme : le
+            scélérat est parvenu à libérer ses mains sans que tu ne t'en
+            aperçoives !
+          </p>
+          <a href="#planche47" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche47" class="hidden">
+        <img
+          src="./planche_47.png"
+          alt="Super Fantôme croupit dans un cachot."
+        />
+        <figcaption>
+          <p>
+            Tu te réveilles dans un cachot, avec un pichet d'eau croupie et du
+            pain sec. Tu as perdu.
+          </p>
+          <a href="#planche1" class="clic">Recommence à zéro</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche48" class="hidden">
+        <img
+          src="./planche_48.png"
+          alt="Super Fantôme est arrivé au commissariat."
+        />
+        <figcaption>
+          <p>
+            Te voilà au commissariat : tu présentes la jeune fille et explique
+            où se trouvent le docteur Krapougnat et le Vautour.
+          </p>
+          <a href="#planche49" class="clic">Clique ici</a>
+        </figcaption>
+      </figure>
+
+      <figure id="planche49" class="hidden">
+        <img src="./planche_49.png" alt="Super Fantôme est victorieux." />
+        <figcaption>
+          <p>
+            Malheureusement, des policiers allés voir sur le terrain t'annoncent
+            que le docteur Krapougnat et le Vautour ont réussi à s'échapper.
+            Mais en attendant qu'ils ne préparent d'autres mauvais coups, tout
+            le monde te félicite pour le sauvetage de la fille du président, qui
+            te fait un bisou !
+          </p>
+          <h1>Tu as gagné !</h1>
+        </figcaption>
+      </figure>
+    </main>
+    <footer>
+      <nav>
+        <a href="liens.html">Liens</a>
+        <a href="apropos.html">À propos</a>
+      </nav>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

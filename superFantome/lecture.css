@@ -1,0 +1,125 @@
+header img {
+  height: auto;
+}
+
+main {
+  position: relative;
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  height: auto;
+  padding: 2em 0em;
+  background-color: transparent;
+}
+
+.triche {
+  position: relative;
+}
+
+main figure {
+  width: 80%;
+  top: 10px;
+  position: absolute;
+  transition: ease-in-out 0.3s;
+  margin: auto;
+}
+
+main figure img {
+  margin: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: -30vh;
+  width: 100%;
+  background-color: #33ccff;
+}
+
+footer nav a {
+  color: black;
+}
+
+.footerTriche {
+  position: relative;
+}
+
+figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+figcaption p {
+  width: 100%;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+figcaption a {
+  position: relative;
+  width: 40%;
+  background-color: crimson;
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -15px -15px 0px 0px rgb(0, 0, 0);
+  text-decoration: none;
+}
+figcaption a:active {
+  box-shadow: none;
+  top: -15px;
+  left: -15px;
+}
+
+/* .hidden {
+  display: none;
+  opacity: 0;
+} */
+
+.hidden {
+  z-index: -1;
+  opacity: 0;
+}
+
+main figure h1 {
+  position: relative;
+  top: 0;
+  color: crimson;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#divInventaire {
+  position: fixed;
+  top: 20vh;
+  right: 0vw;
+  width: 15vw;
+  text-align: left;
+}
+
+#modeTriche {
+  position: fixed;
+  top: 30vh;
+  left: 2vw;
+  width: 15vw;
+}
+
+#modeTriche a {
+  position: relative;
+  width: 40%;
+  background-color: crimson;
+  text-align: center;
+  padding: 0.5em;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -15px -15px 0px 0px rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#modeTriche a:active {
+  box-shadow: none;
+  top: -15px;
+  left: -15px;
+}
