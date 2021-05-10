@@ -153,6 +153,7 @@ main figure h1 {
 @media only screen and (max-width: 600px) {
   main {
     flex-direction: column;
+    width: 100%;
   }
   figcaption {
     flex-direction: column;
