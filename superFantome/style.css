@@ -18,9 +18,9 @@ figure {
   margin: 0;
 }
 
-header img {
+/* header img {
   height: 30vh;
-}
+} */
 
 img {
   width: 100%;
@@ -75,8 +75,8 @@ main h1 {
 
 footer {
   background-color: tomato;
-  padding: 1em;
-  height: 10vh;
+  /* padding: 1em; */
+  /* height: 10vh; */
 }
 
 nav {
@@ -195,4 +195,197 @@ nav a {
 #apropos figure {
   margin-top: 2em;
   width: 15%;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 992px) {
+  header img {
+    height: auto;
+  }
+
+  .flexColonne h1,
+  #start,
+  .flexColonnetext p,
+  footer {
+    font-size: xx-large;
+  }
+}
+
+/* @media only screen and (min-width: 768px) {
+  main {
+    background-color: darkslategray;
+    height: auto;
+    display: block;
+  }
+
+  .dessinFantome {
+    position: relative;
+    width: 100%;
+  }
+
+  .flexColonne {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .flexColonne h1 {
+    position: relative;
+    top: 0;
+    text-align: center;
+  }
+
+  #start {
+    margin: 0;
+  }
+
+  .flexColonnetext {
+    position: relative;
+    bottom: 0;
+    display: block;
+    height: 0;
+  }
+
+  footer {
+    position: relative;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  .flexColonne {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: auto;
+    margin: 2em;
+  }
+
+  #start {
+    width: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dessinFantome {
+    position: relative;
+    width: 100%;
+  }
+
+  main h1 {
+    top: -54vh;
+    margin: 1em;
+  }
+
+  .flexColonnetext {
+    position: absolute;
+    bottom: -18vh;
+    display: block;
+    width: 100%;
+    height: 22vh;
+  }
+
+  footer {
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  main {
+    display: flex;
+  }
+
+  .flexColonne {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    margin-right: 2em;
+  }
+
+  main h1 {
+    top: -15vh;
+    margin: 0;
+  }
+
+  .text {
+    font-size: medium;
+  }
+
+  #start {
+    width: auto;
+  }
+
+  .dessinFantome {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+  }
+
+  main h1 {
+    margin: 1em;
+  }
+
+  .flexColonnetext {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    width: 40%;
+    height: 60vh;
+  }
+
+  .auteur {
+    margin: 0;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flexColonne h1,
+  #start,
+  .flexColonnetext p {
+    font-size: medium;
+  }
+  main {
+    height: auto;
+  }
+  .flexColonne {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .flexColonne h1 {
+    position: relative;
+    top: 0;
+    text-align: center;
+  }
+
+  #start {
+    margin: 1em;
+  }
+
+  .flexColonnetext {
+    position: relative;
+    bottom: -10px;
+    display: flex;
+    height: 200px;
+  }
+
+  footer {
+    padding: 1em;
+  }
 }

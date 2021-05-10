@@ -123,3 +123,47 @@ main figure h1 {
   top: -15px;
   left: -15px;
 }
+
+#pivot {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  #modeTriche {
+    margin: 0em 1em;
+  }
+  #modeTriche a {
+    display: block;
+    width: 60%;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 18%;
+    border-radius: 0 10px 0 0;
+  }
+
+  footer nav {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  figcaption {
+    flex-direction: column;
+  }
+
+  figcaption a {
+    width: 80%;
+    margin: 1em;
+  }
+
+  #pivot {
+    display: block;
+    color: red;
+    background-color: rgb(0, 0, 0);
+    padding: 1em;
+  }
+}
