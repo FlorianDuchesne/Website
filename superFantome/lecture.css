@@ -128,7 +128,7 @@ main figure h1 {
   display: none;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   #modeTriche {
     margin: 0em 1em;
   }
@@ -151,6 +151,9 @@ main figure h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
   figcaption {
     flex-direction: column;
   }
@@ -165,5 +168,51 @@ main figure h1 {
     color: red;
     background-color: rgb(0, 0, 0);
     padding: 1em;
+  }
+
+  #entete {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 1em;
+  }
+
+  #modeTriche {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    font-size: small;
+  }
+
+  #divInventaire {
+    font-size: small;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  #divInventaire h3 {
+    margin: 0;
+  }
+
+  #divInventaire ul {
+    margin: 0;
+  }
+
+  main figure {
+    top: 7em;
+    width: 90%;
+  }
+
+  footer {
+    width: 15%;
+  }
+
+  footer nav a {
+    font-size: x-small;
   }
 }
