@@ -1,0 +1,24 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block page_title %}
+	Dashboard
+{% endblock %}
+{% block main %}
+
+	<div id="visites" style="height: 400px; padding:0;">
+
+		<section id="auth-button"></section>
+		<section id="view-selector"></section>
+		<section id="timeline"></section>
+
+		<div class="row">
+			<div class="col-6">
+				<a href="https://analytics.google.com/analytics/web/#/p331554015/reports/reportinghub?params=_u..nav%3Dmaui" target="_blank" rel="noopener noreferrer">
+					<h3>Rapport d'analyses Google</h3>
+				</a>
+				<p>J'aurais bien fait un suivi avec plutôt Matomo mais avec une base de données SQLite c'est pas possible…</p>
+			</div>
+		</div>
+
+		<!-- Step 2: Load the library. -->
+	{% endblock %}

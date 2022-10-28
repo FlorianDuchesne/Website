@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://kit.fontawesome.com/e2a8fec256.js" crossorigin="anonymous"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8BD9FH4RSQ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-8BD9FH4RSQ');
+		</script>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function () { // https://dashboard.emailjs.com/admin/account
+emailjs.init('55E9Ijuc2CVpVcwsx');
+})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+event.preventDefault();
+// generate a five digit number for the contact_number variable
+// these IDs from the previous steps
+emailjs.sendForm('contact_service', 'contact_form', this).then(function () {
+console.log('SUCCESS!');
+}, function (error) {
+console.log('FAILED...', error);
+});
+});
+}
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}
+		{% endblock %}
+	</body>
+</html>

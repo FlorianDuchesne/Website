@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,500;0,900;1,100;1,200;1,500;1,900&display=swap');
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+$blue: #00a091;
+$orange: #fca67e;
+$white: seashell;
+
+@mixin background(){
+  position: relative;
+  overflow: hidden;
+}
+@mixin backgroundBefore($color, $rotate){
+  content: '';
+  background-color: $color;
+  transform: rotate($rotate) scale(1);
+  position: absolute;
+  left: -100px;
+  width: 150%;
+  height: 97%;
+  z-index: -1;
+  margin-top: 25px;
+}
+@mixin filter($brightness, $saturate){
+  filter: sepia(100%) hue-rotate(118deg) brightness($brightness) saturate($saturate);
+}
+
+body {
+  // background-color: ghostwhite;
+  // background-color: floralwhite;
+  // background-color:seashell;
+  // background-color: whitesmoke;
+  // background-color: snow;
+  // background-color: white;
+  background-color: $white;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+h2{
+  text-align: center;
+  margin: 5rem 0rem 4rem;
+  font-size: xxx-large;
+}
+img{
+  width: 100%;
+}
+.fa-bars{
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+header {
+  height: 140px;
+  color: $orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0.5vh 0.5vw;
+  h1{
+    font-size: 3.5rem;
+    margin: 0 2rem;
+  }  
+    ul{
+      opacity: 0;
+      width: 0%;
+      margin: 0%;
+      padding: 0%;
+      // display: flex;
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        margin: 1rem;
+      }
+    }
+}
+#apropos{
+  @include background();
+  h2{
+    color: $orange;
+  }
+  strong{
+    color: $orange;
+  }
+  a{
+    text-decoration: none;
+    color: $orange;
+    font-weight: bold;
+  }
+  #apropos_bloc{
+    display: flex;
+    flex-direction: column-reverse;
+    img{
+      width: 40vw;
+      margin:auto;
+      margin-bottom: 4rem;
+      border-radius: 10px;
+      @include filter(170%, 100%);
+    }
+  }
+  #apropos_contenu {
+    color: $white;  
+    padding: 2rem 0rem;
+    margin: 0rem 5rem;
+    text-align: start;
+    div{
+      margin: 1rem 0rem;
+    }
+  }
+}
+#apropos::before{
+  @include backgroundBefore($blue, 2deg);
+}
+#parcours{
+  h2{
+    color: $orange;
+    margin: 2rem 0rem 4rem;
+  }
+  h3{
+    color: $blue;
+    margin: 2rem 5rem;
+  }
+  p{
+    font-size: small;
+    margin: 0.5rem 5rem;
+    text-align: start;
+    color: $blue;
+    em {
+      color: $orange;
+    }
+  }
+  p::before{
+    content:"# ";
+    color: $orange;
+  }
+  #competences::before{
+    content:"";
+  }
+  span::before{
+    content:"#";
+    color: $orange;
+  }
+  padding-bottom: 3rem;
+}
+#projets{
+  @include background();
+  h2{
+    color: $blue;
+  }
+  figure{
+    text-align: center;
+    width:  750px;
+    height: 550px;
+    background-color: $blue;
+    // position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10rem auto;
+    img{
+      width:  750px;
+      height: 400px;
+      object-fit: cover;  
+      // @include filter(70%, 50%);
+      filter: brightness(90%);
+      transition: 0.5s ease-in-out;
+    }
+    img:hover{
+      filter: none;
+    }
+    figcaption{
+      // position: relative;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      font-size: xx-large;
+      color: $white;
+      // text-shadow: black 1px 0 10px;
+      // bottom: 1rem;
+    }
+  }
+}
+#projets::before{
+  @include backgroundBefore($orange, -2deg);
+}  
+
+#contact{
+  h2{
+      color: $blue;
+      margin: 2rem 0rem 4rem;  
+  }
+  p{
+    color: #fca67e;
+    margin: auto;
+    text-align: center;
+  }
+  img{
+    width: 100px;
+    margin: 3rem auto;
+    display: block;
+  }
+  form{
+    margin: 3rem auto;
+    input, textarea {
+      background-color:#e9e8e0;
+      border: none;
+      width: 90%;
+      margin: 1rem;
+      display: block;
+      color: $blue;
+      padding: 0.5rem;
+    }
+    input::placeholder{
+      color: $blue;
+    }
+    #message{
+      height: 100px;
+    }
+    .g-recaptcha{
+      margin: 1rem;
+    }
+    #button{
+      background-color: $blue;
+      color: $white;
+      width: 91%;
+      border-radius: 5px;
+      margin: 1rem;
+    }
+  }
+}
